@@ -1,0 +1,47 @@
+.switcher {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 4px;
+	border: 1px solid var(--control-border);
+	border-radius: 8px;
+	background: var(--control-bg);
+}
+
+.switcher button {
+	height: 32px;
+	border: 0;
+	border-radius: 6px;
+	padding: 0 10px;
+	color: var(--text-secondary);
+	background: transparent;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+	transition:
+		background-color 180ms ease,
+		color 180ms ease,
+		opacity 180ms ease;
+}
+
+.switcher button:disabled {
+	cursor: default;
+	opacity: 0.65;
+}
+
+.switcher button:hover:not(:disabled),
+.switcher .active {
+	color: var(--text-primary);
+	background: var(--control-active-bg);
+}
+
+@media (max-width: 560px) {
+	.switcher {
+		width: 100%;
+	}
+
+	.switcher button {
+		flex: 1;
+		padding: 0 8px;
+	}
+}

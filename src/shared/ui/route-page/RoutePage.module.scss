@@ -1,0 +1,12 @@
+.page {
+	min-height: 220px;
+	display: flex;
+	align-items: center;
+}
+
+.page h1 {
+	color: var(--text-primary);
+	font-size: clamp(2rem, 4vw, 3.5rem);
+	font-weight: 700;
+	line-height: 1.1;
+}
