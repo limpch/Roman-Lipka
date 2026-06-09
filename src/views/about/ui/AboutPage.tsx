@@ -37,11 +37,19 @@ export function AboutPage() {
 					</a>
 					<a
 						className={styles.link}
-						href="www.linkedin.com/in/limpchh"
+						href="https://www.linkedin.com/in/limpchh"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						LinkedIn
+					</a>
+					<a
+						className={styles.link}
+						href="https://github.com/limpch"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						GitHub
 					</a>
 				</section>
 				<section>
