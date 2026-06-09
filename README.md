@@ -1,6 +1,7 @@
 # Roman Lipka Portfolio
 
-Frontend TypeScript Developer with 4+ years of commercial experience building SPA applications, internal CRM systems, admin panels, Telegram Web Apps, and client-facing B2B/B2C products.
+Frontend TypeScript Developer with 4+ years of commercial experience building SPA applications,
+internal CRM systems, admin panels, Telegram Web Apps, and client-facing B2B/B2C products.
 
 ## About Me
 
@@ -15,17 +16,16 @@ Frontend TypeScript Developer with 4+ years of commercial experience building SP
 
 ## GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=limpch&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=limpch&layout=compact&theme=tokyonight)
-
 ![GitHub Streak](https://streak-stats.demolab.com?user=limpch&theme=tokyonight)
 
 ## Project
 
-This is a personal portfolio website built with Next.js, React, TypeScript, and SCSS Modules. The project uses an FSD-inspired structure with separate layers for shared configuration, features, widgets, entities, and views.
+This is a personal portfolio website built with Next.js, React, TypeScript, and SCSS Modules. The
+project uses an FSD-inspired structure with separate layers for shared configuration, features,
+widgets, entities, and views.
 
-The site includes language switching, theme switching, SSR-rendered localized content, cookie-based preferences, and a centered animated content shell.
+The site includes language switching, theme switching, SSR-rendered localized content, cookie-based
+preferences, and a centered animated content shell.
 
 ## Getting Started
 
@@ -60,3 +60,4 @@ Run lint:
 ```bash
 npm run lint
 ```
+
