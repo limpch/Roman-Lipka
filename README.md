@@ -9,7 +9,8 @@ internal CRM systems, admin panels, Telegram Web Apps, and client-facing B2B/B2C
 - **Role:** Frontend TypeScript Developer
 - **Age:** 22
 - **Experience:** 4+ years of commercial development
-- **Core stack:** React, TypeScript, Next.js, Redux Toolkit, Zustand, RTK Query, React Router
+- **Core stack:** React/Angular, TypeScript, Next.js, Redux Toolkit, Zustand, RTK Query, React
+  Router
 - **API and realtime:** WebSocket, REST API, GraphQL, Apollo Client
 - **Backend and tooling:** Node.js, Express, NestJS, Docker, Vite, Webpack
 - **Quality and UI:** Jest, React Testing Library, Sentry, SCSS, SCSS Modules, Figma

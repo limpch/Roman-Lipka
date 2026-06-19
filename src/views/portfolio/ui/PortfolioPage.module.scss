@@ -85,6 +85,17 @@
 	font-weight: 700;
 }
 
+.projectLink {
+	justify-self: start;
+	color: var(--text-primary);
+	font-weight: 700;
+	text-underline-offset: 4px;
+}
+
+.projectLink:hover {
+	color: var(--button-hover-bg);
+}
+
 @media (max-width: 820px) {
 	.columns {
 		grid-template-columns: 1fr;

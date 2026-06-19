@@ -24,6 +24,7 @@ export type ProjectCase = {
 	challenges: string[]
 	improvements: string[]
 	stack: string[]
+	githubUrl?: string
 }
 
 export const profile = {
@@ -38,7 +39,7 @@ export const profile = {
 		en: "22 y.o.",
 	},
 	role: {
-		ru: "Frontend TypeScript Developer",
+		ru: "Фронтенд-разработчик на TypeScript",
 		en: "Frontend TypeScript Developer",
 	},
 	homeTitle: {
@@ -55,7 +56,7 @@ export const about = {
 	ru: {
 		title: "Обо мне",
 		summary:
-			"Frontend Developer с 4+ годами коммерческого опыта в разработке SPA-приложений и внутренних B2B/B2C систем на React и TypeScript. Работал в продуктовых компаниях и агентской среде, часто параллельно на нескольких проектах. На ряде проектов был единственным Frontend Developer и отвечал за frontend-архитектуру, интеграцию с backend, UI/UX, стабильность после релизов и продуктовые технические решения. Сейчас ищу удаленную позицию в продуктовой команде, где смогу участвовать во frontend-разработке, росте продукта, архитектуре и технической стратегии.",
+			"Фронтенд-разработчик с 4+ годами коммерческого опыта в разработке SPA-приложений и внутренних B2B/B2C-систем на React, Angular и TypeScript. Работал в продуктовых компаниях и агентской среде, часто параллельно на нескольких проектах. На ряде проектов был единственным фронтенд-разработчиком и отвечал за архитектуру фронтенда, интеграцию с бэкендом, реализацию UI/UX, стабильность после релизов и продуктовые технические решения. Сейчас ищу удаленную позицию в продуктовой команде, где смогу участвовать в разработке фронтенда, росте продукта, архитектуре и технической стратегии.",
 		contactsTitle: "Контакты",
 		educationTitle: "Образование",
 		education:
@@ -66,7 +67,7 @@ export const about = {
 	en: {
 		title: "About me",
 		summary:
-			"Frontend Developer with 4+ years of commercial experience building SPA applications and internal B2B/B2C systems using React and TypeScript. Experienced in both product companies and agency environments, often working across multiple projects simultaneously. Frequently served as the sole Frontend Developer, taking ownership of frontend architecture, frontend-backend integration, UI/UX implementation, and post-release product stability. Currently seeking a remote position within a product-focused team where I can contribute to frontend development, product growth, architecture decisions, and technical strategy.",
+			"Frontend Developer with 4+ years of commercial experience building SPA applications and internal B2B/B2C systems using React/Angular and TypeScript. Experienced in both product companies and agency environments, often working across multiple projects simultaneously. Frequently served as the sole Frontend Developer, taking ownership of frontend architecture, frontend-backend integration, UI/UX implementation, and post-release product stability. Currently seeking a remote position within a product-focused team where I can contribute to frontend development, product growth, architecture decisions, and technical strategy.",
 		contactsTitle: "Contacts",
 		educationTitle: "Education",
 		education:
@@ -89,7 +90,7 @@ export const skillGroups = {
 		{
 			title: "Frontend",
 			items: [
-				"React",
+				"React/Angular",
 				"TypeScript",
 				"Next.js",
 				"Redux Toolkit",
@@ -99,27 +100,27 @@ export const skillGroups = {
 			],
 		},
 		{
-			title: "Realtime и API",
+			title: "Реальное время и API",
 			items: ["WebSocket", "REST API", "GraphQL", "Apollo Client"],
 		},
 		{
-			title: "Backend и Tooling",
+			title: "Бэкенд и инструменты",
 			items: ["Node.js", "Express", "NestJS", "Docker", "Vite", "Webpack"],
 		},
 		{
-			title: "Testing и качество",
+			title: "Тестирование и качество",
 			items: ["Jest", "React Testing Library", "Sentry"],
 		},
 		{
-			title: "UI и Styling",
-			items: ["SCSS", "SCSS Modules", "Figma", "responsive UI", "complex forms and tables"],
+			title: "Интерфейсы и стилизация",
+			items: ["SCSS", "SCSS Modules", "Figma", "адаптивные интерфейсы", "сложные формы и таблицы"],
 		},
 	],
 	en: [
 		{
 			title: "Frontend",
 			items: [
-				"React",
+				"React/Angular",
 				"TypeScript",
 				"Next.js",
 				"Redux Toolkit",
@@ -155,37 +156,37 @@ export const experience = {
 			period: "Май 2025 - Июнь 2026",
 			location: "Краснодар, Россия",
 			description:
-				"Продуктовая компания, разрабатывающая внутренние CRM-решения и клиентские платформы. Работал над CRM и клиентской платформой: real-time функциональность, внутренние коммуникации, PWA, стабильность frontend и улучшение UX.",
+				"Продуктовая компания, разрабатывающая внутренние CRM-решения и клиентские платформы. Работал над CRM и клиентской платформой: функциональность в реальном времени, внутренние коммуникации, PWA, стабильность фронтенда и улучшение UX.",
 			points: [
-				"Разрабатывал и поддерживал CRM и client-facing platform features на React и TypeScript.",
-				"Реализовал real-time functionality на WebSocket: live updates, status changes и user notifications.",
-				"Разрабатывал internal chat system и notification flows для business processes.",
-				"Собрал PWA functionality: offline mode, push notifications и installation support for user devices.",
-				"Рефакторил legacy frontend code для улучшения maintainability, readability и application stability.",
-				"Улучшал существующие UI components, forms, user flows и internal tools.",
-				"Интегрировал frontend features с backend services и GraphQL API.",
+				"Разрабатывал и поддерживал CRM и функции клиентской платформы на React и TypeScript.",
+				"Реализовал функциональность в реальном времени на WebSocket: live-обновления, смену статусов и пользовательские уведомления.",
+				"Разрабатывал внутренний чат и сценарии уведомлений для бизнес-процессов.",
+				"Собрал PWA-функции: офлайн-режим, push-уведомления и установку приложения на устройства пользователей.",
+				"Рефакторил устаревший фронтенд-код, улучшая поддерживаемость, читаемость и стабильность приложения.",
+				"Улучшал существующие UI-компоненты, формы, пользовательские сценарии и внутренние инструменты.",
+				"Интегрировал фронтенд-функции с бэкенд-сервисами и GraphQL API.",
 				"Управлял состоянием приложения через Redux Toolkit.",
-				"Работал с backend developers и designers, чтобы согласовать реализацию с product requirements.",
-				"Поддерживал released features и исправлял production issues.",
+				"Работал с бэкенд-разработчиками и дизайнерами, чтобы согласовать реализацию с требованиями продукта.",
+				"Поддерживал выпущенные функции и исправлял production-проблемы.",
 			],
 			sections: [
 				{
-					title: "Real-time functionality",
+					title: "Функциональность в реальном времени",
 					points: [
-						"Внедрил WebSocket-based live data updates и работал над chat logic, message states, notifications и user interaction flows.",
-						"Повысил stability of real-time communication between frontend and backend.",
+						"Внедрил live-обновления данных на WebSocket и работал над логикой чата, состояниями сообщений, уведомлениями и сценариями взаимодействия пользователей.",
+						"Повысил стабильность обмена данными в реальном времени между фронтендом и бэкендом.",
 					],
 				},
 				{
-					title: "PWA development",
+					title: "Разработка PWA",
 					points: [
-						"Разработал PWA features для client platform: selected offline-mode scenarios, push notifications и device installation flow.",
+						"Разработал PWA-функции для клиентской платформы: отдельные сценарии офлайн-режима, push-уведомления и установку приложения на устройство.",
 					],
 				},
 				{
-					title: "Legacy code refactoring",
+					title: "Рефакторинг устаревшего кода",
 					points: [
-						"Рефакторил frontend modules and components, улучшал code structure и стабилизировал critical user flows after releases.",
+						"Рефакторил фронтенд-модули и компоненты, улучшал структуру кода и стабилизировал критичные пользовательские сценарии после релизов.",
 					],
 				},
 			],
@@ -206,39 +207,39 @@ export const experience = {
 			period: "Январь 2022 - Апрель 2025",
 			location: "Краснодар, Россия",
 			description:
-				"IT-компания, разрабатывающая внутренние B2B и B2C продукты. Участвовал в разработке CRM systems, admin panels, Telegram Web Apps и client-facing SPA applications. На нескольких проектах был sole Frontend Developer и отвечал за frontend architecture, integration, product-related technical decisions и post-release stability.",
+				"IT-компания, разрабатывающая внутренние B2B- и B2C-продукты. Участвовал в разработке CRM-систем, административных панелей, Telegram Web Apps и клиентских SPA-приложений. На нескольких проектах был единственным фронтенд-разработчиком и отвечал за архитектуру фронтенда, интеграцию, продуктовые технические решения и стабильность после релизов.",
 			points: [
-				"Разрабатывал SPA applications на React и TypeScript.",
-				"Создавал B2B admin panels и CRM systems для internal business processes.",
-				"Делал complex UI components, dynamic forms, tables, filters, pagination и analytics interfaces.",
-				"Интегрировал REST API и real-time functionality.",
-				"Проектировал и поддерживал application state architecture на Redux Toolkit и Zustand.",
-				"Рефакторил legacy code и улучшал application stability.",
-				"Оптимизировал frontend performance и сокращал unnecessary client-server requests.",
-				"Участвовал в code reviews и работал с backend developers и designers.",
-				"Поддерживал released features и исправлял production issues.",
+				"Разрабатывал SPA-приложения на React и TypeScript.",
+				"Создавал B2B-админки и CRM-системы для внутренних бизнес-процессов.",
+				"Делал сложные UI-компоненты, динамические формы, таблицы, фильтры, пагинацию и аналитические интерфейсы.",
+				"Интегрировал REST API и функциональность в реальном времени.",
+				"Проектировал и поддерживал архитектуру состояния приложения на Redux Toolkit и Zustand.",
+				"Рефакторил устаревший код и улучшал стабильность приложения.",
+				"Оптимизировал производительность фронтенда и сокращал лишние клиент-серверные запросы.",
+				"Участвовал в code review и работал с бэкенд-разработчиками и дизайнерами.",
+				"Поддерживал выпущенные функции и исправлял production-проблемы.",
 			],
 			sections: [
 				{
-					title: "SPA performance optimization",
+					title: "Оптимизация производительности SPA",
 					points: [
-						"Улучшил loading speed of the main application feed.",
-						"Внедрил lazy loading, dynamic imports, virtualized lists with react-window и request caching with RTK Query.",
-						"Снизил backend load by minimizing repeated requests.",
+						"Улучшил скорость загрузки основной ленты приложения.",
+						"Внедрил lazy loading, динамические импорты, виртуализированные списки на react-window и кеширование запросов через RTK Query.",
+						"Снизил нагрузку на бэкенд за счет сокращения повторных запросов.",
 					],
 				},
 				{
-					title: "Internal reporting automation",
+					title: "Автоматизация внутренней отчетности",
 					points: [
-						"Реализовал automated report export system with Excel file generation, Google Sheets API integration и Telegram notifications.",
-						"Помог reduce manual work for managers и speed up daily reporting processes.",
+						"Реализовал автоматизированный экспорт отчетов с генерацией Excel-файлов, интеграцией с Google Sheets API и Telegram-уведомлениями.",
+						"Помог сократить ручную работу менеджеров и ускорить ежедневную отчетность.",
 					],
 				},
 				{
-					title: "Release and production support",
+					title: "Поддержка релизов и production",
 					points: [
-						"Участвовал в urgent fixes for production issues before and after releases.",
-						"Настроил error monitoring with Sentry и fallback mechanisms for critical user-facing functionality.",
+						"Участвовал в срочных исправлениях production-проблем до и после релизов.",
+						"Настроил мониторинг ошибок через Sentry и fallback-механизмы для критичных пользовательских функций.",
 					],
 				},
 			],
@@ -382,26 +383,26 @@ export const projectCases = {
 	ru: [
 		{
 			title: "Translead",
-			type: "Fullstack Project",
+			type: "Fullstack-проект",
 			description:
-				"Сервис автоматического распределения лидов между клиентами по tags, limits и routing rules. Работал как единственный Fullstack Developer; большинство архитектурных и продуктовых решений принимал самостоятельно из-за неполных initial requirements.",
+				"Сервис автоматического распределения лидов между клиентами по тегам, лимитам и правилам маршрутизации. Работал как единственный fullstack-разработчик; большинство архитектурных и продуктовых решений принимал самостоятельно из-за неполных исходных требований.",
 			responsibilities: [
-				"Разработал frontend и backend части системы.",
-				"Реализовал lead routing logic на основе tags, sources, clients и business rules.",
-				"Построил функциональность управления clients, sources и tags.",
-				"Реализовал lead limits, client queues и distribution logic.",
-				"Добавил backend protection от spam и external unauthorized requests.",
-				"Интегрировал Telegram и email notifications.",
+				"Разработал фронтенд- и бэкенд-части системы.",
+				"Реализовал логику маршрутизации лидов на основе тегов, источников, клиентов и бизнес-правил.",
+				"Построил функциональность управления клиентами, источниками и тегами.",
+				"Реализовал лимиты лидов, очереди клиентов и логику распределения.",
+				"Добавил защиту бэкенда от спама и внешних неавторизованных запросов.",
+				"Интегрировал Telegram и email-уведомления.",
 			],
 			challenges: [
-				"Designing the core lead distribution logic.",
-				"Building a flexible limits and queue system.",
-				"Working with a high level of uncertainty in product requirements.",
+				"Проектирование основной логики распределения лидов.",
+				"Создание гибкой системы лимитов и очередей.",
+				"Работа с высоким уровнем неопределенности в продуктовых требованиях.",
 			],
 			improvements: [
-				"Самостоятельно спроектировал core service architecture.",
-				"Реализовал API keys и backend request protection.",
-				"Ускорил MVP delivery за счет Mantine UI для fast and consistent interface development.",
+				"Самостоятельно спроектировал базовую архитектуру сервиса.",
+				"Реализовал API-ключи и защиту запросов к бэкенду.",
+				"Ускорил выпуск MVP за счет Mantine UI для быстрой и единообразной разработки интерфейса.",
 			],
 			stack: [
 				"React",
@@ -420,51 +421,122 @@ export const projectCases = {
 			],
 		},
 		{
-			title: "Moneyport.ru",
-			type: "Fullstack Project",
+			title: "PlaytestRadar",
+			type: "Frontend-проект",
 			description:
-				"Сервис международных денежных переводов с CRM system и client-facing interface. Работал над frontend основной страницы и internal CRM system, focusing on real-time communication, PWA functionality и application stability.",
+				"Приложение на Angular 19 для организации игровых плейтестов, сбора обратной связи, публикации дневников разработки и управления дорожной картой функций. Проект включает публичный интерфейс для игроков и тестировщиков, а также административный раздел для просмотра отчетов и обновления статусов дорожной карты.",
 			responsibilities: [
-				"Разрабатывал и поддерживал frontend part of the platform.",
-				"Создал real-time chat using WebSocket.",
-				"Разработал PWA functionality for the client platform.",
-				"Подключил browser push notifications.",
-				"Улучшал UX, frontend stability и critical user flows.",
+				"Разработал публичные страницы: обзор, карточку игры, дневники разработки, дорожную карту и форму обратной связи.",
+				"Реализовал административную зону с auth guard: дашборд, список отчетов, страницу отчета и управление дорожной картой.",
+				"Настроил клиентскую маршрутизацию и конфигурацию, подготовленную к SSR, через @angular/ssr.",
+				"Построил сервисы данных и общие доменные модели для игры, дневников разработки, отчетов обратной связи и дорожной карты.",
+				"Реализовал клиентское хранение отчетов обратной связи через localStorage в браузере.",
+				"Поддержал структуру, удобную для unit-тестирования через Karma и Jasmine.",
 			],
 			challenges: [
-				"Implementing stable real-time functionality.",
-				"Supporting PWA behavior across different user scenarios.",
-				"Working with GraphQL and complex application state.",
+				"Проектирование понятных сценариев для игроков, тестировщиков и администраторов в одном приложении.",
+				"Простое хранение состояния и обратной связи без бэкенда.",
+				"Подготовка SSR-совместимой конфигурации Angular.",
 			],
 			improvements: [
-				"Реализовал PWA functionality with offline capabilities.",
-				"Подключил browser push notifications.",
-				"Участвовал в refactoring frontend logic and improving application stability.",
+				"Структурировал приложение вокруг страниц, базовых сервисов, общего макета и моделей.",
+				"Собрал сценарии дорожной карты и обратной связи, которые можно расширить интеграцией с бэкендом.",
+				"Сохранил гибкую конфигурацию времени выполнения за счет Express-настройки, подготовленной к SSR.",
+			],
+			stack: [
+				"Angular 19",
+				"TypeScript",
+				"Angular Router",
+				"Angular Signals",
+				"SCSS",
+				"Express",
+				"@angular/ssr",
+				"localStorage",
+				"Karma",
+				"Jasmine",
+			],
+			githubUrl: "https://github.com/limpch/playtest-radar",
+		},
+		{
+			title: "Roman Lipka Portfolio",
+			type: "Frontend-проект",
+			description:
+				"Персональный сайт-портфолио на Next.js, React, TypeScript и SCSS Modules. Проект построен на FSD-inspired структуре, содержит локализованный контент, переключение языка и темы, SSR-рендеринг и cookie-based настройки пользователя.",
+			responsibilities: [
+				"Разработал страницы портфолио: главную, обо мне, опыт, стек и список кейсов.",
+				"Организовал данные профиля, опыта, навыков и проектов через типизированную модель контента.",
+				"Реализовал переключение языка и темы с сохранением пользовательских настроек.",
+				"Настроил SSR-рендеринг локализованного контента и cookie-based preferences.",
+				"Собрал FSD-inspired структуру с отдельными слоями shared, features, widgets, entities и views.",
+			],
+			challenges: [
+				"Поддержка двух языков без дублирования UI-логики.",
+				"Согласование SSR-состояния с клиентскими настройками языка и темы.",
+				"Сохранение простой структуры данных для быстрого обновления портфолио.",
+			],
+			improvements: [
+				"Сделал портфолио расширяемым: новые кейсы добавляются через модель данных.",
+				"Разделил приложение на понятные слои и переиспользуемые UI-блоки.",
+				"Добавил стабильную основу для дальнейшего развития сайта и публичной презентации опыта.",
+			],
+			stack: [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"SCSS Modules",
+				"SSR",
+				"Cookies",
+				"FSD-inspired architecture",
+				"ESLint",
+			],
+			githubUrl: "https://github.com/limpch/Roman-Lipka",
+		},
+		{
+			title: "Moneyport.ru",
+			type: "Fullstack-проект",
+			description:
+				"Сервис международных денежных переводов с CRM-системой и клиентским интерфейсом. Работал над фронтендом основной страницы и внутренней CRM, фокусируясь на коммуникации в реальном времени, PWA-функциях и стабильности приложения.",
+			responsibilities: [
+				"Разрабатывал и поддерживал фронтенд-часть платформы.",
+				"Создал чат в реальном времени на WebSocket.",
+				"Разработал PWA-функции для клиентской платформы.",
+				"Подключил браузерные push-уведомления.",
+				"Улучшал UX, стабильность фронтенда и критичные пользовательские сценарии.",
+			],
+			challenges: [
+				"Реализация стабильной функциональности в реальном времени.",
+				"Поддержка PWA-поведения в разных пользовательских сценариях.",
+				"Работа с GraphQL и сложным состоянием приложения.",
+			],
+			improvements: [
+				"Реализовал PWA-функции с офлайн-возможностями.",
+				"Подключил браузерные push-уведомления.",
+				"Участвовал в рефакторинге фронтенд-логики и повышении стабильности приложения.",
 			],
 			stack: ["React", "TypeScript", "MobX", "GraphQL", "Apollo Client", "Motion", "SCSS Modules"],
 		},
 		{
 			title: "Capsaty.ru",
-			type: "Fullstack Project",
+			type: "Fullstack-проект",
 			description:
-				"Платформа для создания dynamic forms, collecting submissions и sending data to email and Telegram. Разрабатывал frontend и backend, продолжал поддержку и улучшение платформы после release.",
+				"Платформа для создания динамических форм, сбора заявок и отправки данных в email и Telegram. Разрабатывал фронтенд и бэкенд, продолжал поддержку и улучшение платформы после релиза.",
 			responsibilities: [
-				"Разработал dynamic form builder.",
-				"Реализовал typing and handling for dynamic form fields.",
-				"Построил submission processing and data storage logic.",
-				"Разработал analytics for submissions, forms, dates, and users.",
-				"Интегрировал Telegram bots and email notifications.",
-				"Реализовал data export to Excel.",
+				"Разработал конструктор динамических форм.",
+				"Реализовал типизацию и обработку динамических полей формы.",
+				"Построил обработку заявок и логику хранения данных.",
+				"Разработал аналитику по заявкам, формам, датам и пользователям.",
+				"Интегрировал Telegram-ботов и email-уведомления.",
+				"Реализовал экспорт данных в Excel.",
 			],
 			challenges: [
-				"Maintaining universal typing for dynamic fields.",
-				"Building analytics across dates, forms, and users.",
-				"Supporting an extensible architecture for the form builder.",
+				"Поддержка универсальной типизации для динамических полей.",
+				"Построение аналитики по датам, формам и пользователям.",
+				"Поддержка расширяемой архитектуры конструктора форм.",
 			],
 			improvements: [
-				"Улучшил структуру работы with dynamic field types.",
-				"Повысил backend stability and maintainability.",
-				"Участвовал в designing new platform features.",
+				"Улучшил структуру работы с динамическими типами полей.",
+				"Повысил стабильность и поддерживаемость бэкенда.",
+				"Участвовал в проектировании новых функций платформы.",
 			],
 			stack: [
 				"React",
@@ -486,26 +558,26 @@ export const projectCases = {
 		},
 		{
 			title: "Avtostories.ru",
-			type: "Frontend Project / Backend Microservice",
+			type: "Frontend-проект / бэкенд-микросервис",
 			description:
-				"Telegram Web App для генерации stories и advertising images для automotive and construction companies. Работал как sole Frontend Developer, участвовал в UX/product decisions и разработал Express microservice for image generation.",
+				"Telegram Web App для генерации сторис и рекламных изображений для автомобильных и строительных компаний. Работал как единственный фронтенд-разработчик, участвовал в UX- и продуктовых решениях, а также разработал микросервис на Express для генерации изображений.",
 			responsibilities: [
-				"Разработал SPA interface for Telegram Web App.",
+				"Разработал SPA-интерфейс для Telegram Web App.",
 				"Интегрировал Telegram Web App API.",
-				"Создал interfaces for generating stories from templates.",
-				"Работал с animations, UX и mobile-first interface adaptation.",
-				"Разработал backend microservice for image generation.",
-				"Участвовал в landing page and admin panel interfaces.",
+				"Создал интерфейсы для генерации сторис по шаблонам.",
+				"Работал с анимациями, UX и mobile-first-адаптацией интерфейса.",
+				"Разработал бэкенд-микросервис для генерации изображений.",
+				"Участвовал в разработке лендинга и интерфейсов админ-панели.",
 			],
 			challenges: [
-				"Working within Telegram Web App limitations.",
-				"Generating images on the backend side.",
-				"Maintaining a simple and fast UX for content creation.",
+				"Работа в рамках ограничений Telegram Web App.",
+				"Генерация изображений на стороне бэкенда.",
+				"Поддержка простого и быстрого UX для создания контента.",
 			],
 			improvements: [
-				"Участвовал в designing user scenarios for quick content generation.",
-				"Оптимизировал image generation flow.",
-				"Coordinated design update tasks and improved interface usability.",
+				"Участвовал в проектировании пользовательских сценариев для быстрой генерации контента.",
+				"Оптимизировал процесс генерации изображений.",
+				"Координировал задачи по обновлению дизайна и улучшал удобство интерфейса.",
 			],
 			stack: [
 				"React",
@@ -523,27 +595,27 @@ export const projectCases = {
 		},
 		{
 			title: "Yrasa.ru",
-			type: "Frontend Project",
+			type: "Frontend-проект",
 			description:
-				"CRM system для управления real estate listings и автоматизации работы with Avito feeds. Работал как sole Frontend Developer: designed SPA architecture, implemented complex business logic и participated in product decision-making.",
+				"CRM-система для управления объявлениями о недвижимости и автоматизации работы с фидами Avito. Работал как единственный фронтенд-разработчик: проектировал SPA-архитектуру, реализовывал сложную бизнес-логику и участвовал в продуктовых решениях.",
 			responsibilities: [
-				"Разработал interfaces for managing real estate listings.",
-				"Реализовал complex filtering system with multiple parameters.",
-				"Построил mass editing functionality for listings.",
-				"Реализовал change history with the ability to view and roll back actions.",
-				"Создал listing creation and editing flows inside the CRM.",
-				"Реализовал role-based access control and permission management.",
-				"Работал with large datasets, tables, and business-specific data flows.",
+				"Разработал интерфейсы для управления объявлениями о недвижимости.",
+				"Реализовал сложную систему фильтрации с множеством параметров.",
+				"Построил функциональность массового редактирования объявлений.",
+				"Реализовал историю изменений с возможностью просмотра и отката действий.",
+				"Создал сценарии создания и редактирования объявлений внутри CRM.",
+				"Реализовал ролевой доступ и управление правами.",
+				"Работал с большими наборами данных, таблицами и бизнес-специфичными потоками данных.",
 			],
 			challenges: [
-				"Maintaining performance while working with large lists and tables.",
-				"Implementing complex filtering and mass operation logic.",
-				"Keeping the SPA stable while business logic changed frequently.",
+				"Поддержка производительности при работе с большими списками и таблицами.",
+				"Реализация сложной фильтрации и логики массовых операций.",
+				"Сохранение стабильности SPA при частых изменениях бизнес-логики.",
 			],
 			improvements: [
-				"Optimized list and table rendering.",
-				"Improved application state structure with Redux Toolkit.",
-				"Participated in frontend architecture stabilization and refactoring.",
+				"Оптимизировал рендеринг списков и таблиц.",
+				"Улучшил структуру состояния приложения на Redux Toolkit.",
+				"Участвовал в стабилизации и рефакторинге фронтенд-архитектуры.",
 			],
 			stack: [
 				"React",
@@ -596,6 +668,77 @@ export const projectCases = {
 				"PostgreSQL",
 				"Google APIs / Sheets",
 			],
+		},
+		{
+			title: "PlaytestRadar",
+			type: "Frontend Project",
+			description:
+				"An Angular 19 application for organizing game playtests, collecting feedback, publishing devlogs, and managing a feature roadmap. The project includes a public-facing UI for players and testers plus an admin section for reviewing reports and updating roadmap statuses.",
+			responsibilities: [
+				"Developed public pages for the overview, game details, devlogs, roadmap, and feedback form.",
+				"Implemented an admin area protected by an auth guard: dashboard, feedback reports list, report detail view, and roadmap management page.",
+				"Configured client-side routing and an SSR-ready setup with @angular/ssr.",
+				"Built data services and shared domain models for game data, devlogs, feedback reports, and roadmap items.",
+				"Implemented client-side persistence for feedback reports using browser localStorage.",
+				"Maintained a unit-testable Angular structure with Karma and Jasmine.",
+			],
+			challenges: [
+				"Designing clear player/tester and admin flows in one application.",
+				"Keeping feedback state and persistence simple without a backend.",
+				"Preparing SSR-compatible Angular configuration.",
+			],
+			improvements: [
+				"Structured the application around pages, core services, shared layout, and models.",
+				"Built roadmap and feedback workflows that can be extended with backend integration later.",
+				"Kept the runtime setup flexible through SSR-ready Express configuration.",
+			],
+			stack: [
+				"Angular 19",
+				"TypeScript",
+				"Angular Router",
+				"Angular Signals",
+				"SCSS",
+				"Express",
+				"@angular/ssr",
+				"localStorage",
+				"Karma",
+				"Jasmine",
+			],
+			githubUrl: "https://github.com/limpch/playtest-radar",
+		},
+		{
+			title: "Roman Lipka Portfolio",
+			type: "Frontend Project",
+			description:
+				"A personal portfolio website built with Next.js, React, TypeScript, and SCSS Modules. The project uses an FSD-inspired structure and includes localized content, language and theme switching, SSR rendering, and cookie-based user preferences.",
+			responsibilities: [
+				"Developed portfolio pages for home, about, experience, stack, and project cases.",
+				"Organized profile, experience, skills, and project data through a typed content model.",
+				"Implemented language and theme switching with persisted user preferences.",
+				"Configured SSR-rendered localized content and cookie-based preferences.",
+				"Built an FSD-inspired structure with separate shared, features, widgets, entities, and views layers.",
+			],
+			challenges: [
+				"Supporting two languages without duplicating UI logic.",
+				"Keeping SSR state aligned with client-side language and theme preferences.",
+				"Maintaining a simple data structure for fast portfolio updates.",
+			],
+			improvements: [
+				"Made the portfolio extensible so new cases can be added through the data model.",
+				"Split the application into clear layers and reusable UI blocks.",
+				"Created a stable base for further site development and public presentation of experience.",
+			],
+			stack: [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"SCSS Modules",
+				"SSR",
+				"Cookies",
+				"FSD-inspired architecture",
+				"ESLint",
+			],
+			githubUrl: "https://github.com/limpch/Roman-Lipka",
 		},
 		{
 			title: "Moneyport.ru",
@@ -736,4 +879,3 @@ export const projectCases = {
 		},
 	],
 } satisfies Localized<ProjectCase[]>
-

@@ -34,7 +34,7 @@ export const dictionary: Record<
 			home: "Главная страница",
 			about: "Обо мне",
 			experience: "Опыт",
-			stack: "Стек - технологии",
+			stack: "Технологический стек",
 			portfolio: "Портфолио",
 		},
 		controls: {

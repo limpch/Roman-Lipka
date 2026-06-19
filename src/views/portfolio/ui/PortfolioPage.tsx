@@ -57,6 +57,17 @@ export function PortfolioPage() {
 								<span key={technology}>{technology}</span>
 							))}
 						</div>
+
+						{project.githubUrl ? (
+							<a
+								className={styles.projectLink}
+								href={project.githubUrl}
+								target="_blank"
+								rel="noreferrer"
+							>
+								GitHub
+							</a>
+						) : null}
 					</article>
 				))}
 			</div>
